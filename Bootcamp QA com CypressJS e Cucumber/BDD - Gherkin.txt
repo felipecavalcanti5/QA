@@ -1,0 +1,22 @@
+Funcionalidade: Login do saucedemo
+Como usuário
+Quero logar no site
+Para fazer compras
+
+Cenário: Autenticação válida
+DADO que eu acesse a página de autenticação do site 
+QUANDO eu digitar o usuário "standard_user"
+E digitar a senha "secret_sauce"
+ENTAO deve ser exibida a palavra "Products"
+
+Cenário: Usuário inexistente
+DADO que eu acesse a página de autenticação do site 
+QUANDO eu digitar o usuário "super_user"
+E digitar a senha "secret_sauce"
+ENTAO deve ser exibida uma mensagem de erro
+
+Cenário: com senha inválida
+DADO que eu acesse a página de autenticação do site 
+QUANDO eu digitar o usuário "standard_user"
+E digitar a senha "gmfkee"
+ENTAO deve ser exibida uma mensagem de erro
