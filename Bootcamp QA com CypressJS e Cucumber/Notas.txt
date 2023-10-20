@@ -1,0 +1,5 @@
+https://angelofdiasg.tech/bootcypress20232/
+
+https://kailash-pathak.medium.com/cypress-13-integration-with-bdd-cucumber-pom-a367f534b363
+
+https://github.com/profangelodias/bootcamp-cypress-bdd
