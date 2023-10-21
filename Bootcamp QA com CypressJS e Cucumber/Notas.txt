@@ -1,5 +1,46 @@
+LINKS:
+
 https://angelofdiasg.tech/bootcypress20232/
 
 https://kailash-pathak.medium.com/cypress-13-integration-with-bdd-cucumber-pom-a367f534b363
 
 https://github.com/profangelodias/bootcamp-cypress-bdd
+
+
+
+DIA 01
+
+Modelo Spotify:
+Divisão de projetos em Capítulos e Squads;
+
+Pirâmide de Testes:
+Unidade: 	mais testes unitários do que integração;
+Integração: aglutinação de tudo que se programou em um único ambiente; mais integração do que UI;
+UI: 
+
+Obs.: Anti-pirâmide de testes(evitar) → Cupcake, Ice cream…(inversão da pirâmide)
+
+BDD: Behavior Driven Development
+linguagem “ubíqua”: qualquer ser humano e máquinas preparadas para tanto entendem; 
+GHERKIN: Todo o sistema que implemente BDD utiliza a linguagem Gherkin;
+
+DIA 02
+
+Node.js
+    node -v: verifica a versão do node.js na máquina
+    npm init -y: intalador de pacote do node.js
+
+cypress: É uma dependência de desenvolvimento do Node.js
+    npm install cypress -D: instala o cypress
+    npx cypress open: abre
+
+Hooks
+    before
+    beforeEach
+    after
+    afterEach
+
+Cucumber: soma o Gherkin com o cypress
+
+
+
