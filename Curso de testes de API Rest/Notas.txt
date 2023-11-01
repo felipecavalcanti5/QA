@@ -1,0 +1,131 @@
+AULA 02~~
+ Introdução a APIs Rest
+
+Objetivo: Expor o serviço de um software sem que os usuários conheçam seu interior (não expõe a arquitetura interna)
+OBS.: A API espera outro software se comunicar com ela, diferentemente da UI (Interface Gráfica), cuja interação se dá diretamente com o usuário
+
+Baixa interoperabilidade: API de arquitetura complexa
+REST: modelo de arquitetura
+Protocolo SOAP: padrão específico de operabilidade
+OBS2.: Caixa-preta: Conhecer o exterior sem conhecer o interior
+
+Características de APIs REST
+Forma Simples
+JSON
+Status Code --> protocolo http
+
+Aula 03~~
+O que está por trás da API Rest
+
+API é interface entre dois softwares
+UI é a interação entre o software e o humano
+
+Back-end da aplicação
+Services: camada que armazena as regras de negócio
+Repository: camada responsável por trafegar as informações entre as regras de negócio e o banco de dados
+Controller: intermediador entre quem chama () e serviços e repositories
+o Controlador é uma classe dentro do programa!
+
+“Anotar” = 
+“verbo” = método
+Postman
+json
+
+
+Aula 04
+O que são Requests e Response
+
+Curl: ferramenta para enviar requisições e receber respostas por meio de http
+
+jasonformatter.org
+
+
+Aula 05
+
+Instalando uma API Rest de Exemplo para Testes
+
+heathers: cabeçalho
+
+Aula 06
+
+Headers
+
+Definição: parte de dentro da requisição enviada para o servidor onde serão armazenadas informações técnicas
+
+Swagger: Documentação da interface que se quer interagir.
+Métodos: 
+Post: Cria um recurso dentro do seu servidor;
+Get: Retorna informações do servidor;
+Put: Utilizado para alterar um recurso do servidor; 
+Delete: Remove um recurso
+
+OBS: {id} retorna apenas um elemento
+
+End-point:
+ex.: /v1/auth
+
+No Git Bash:
+curl
+-d: body
+-i: informações do heather
+-is: informações do heather sem os percentuais de tempo
+
+Aula 07
+
+Autenticação e autorização em API Rest
+
+Dicas: 
+Conhecer o objeto;
+abstraindo inteligência do backend
+interface segue diversas recomendações
+Para interagir com com a API Rest, enviar requests e receber responses
+Existem métodos e endpoints para enviar requisições com cabeçalho e corpo
+
+[JSON formatter]
+
+
+
+Autenticação x Autorização:
+Autenticado é o reconhecimento de que uma pessoa é de fato ela mesmo;
+Autorizado é poder consumir um determinado endpoint; tem a possibilidade de realizar determinadas operações.
+error 401 = “unauthorized”
+
+
+Aula 08
+
+enviando parâmetros 
+
+Usando o método POST ou PUT, → -d: body
+escrita do conteúdo do body com JSON
+
+Via Header: -H
+aspas simples!
+
+Via Query: Depois do endpoint, inserir uma ‘?’ + parâmetro = valor
+
+Via PATH: Colocar uma barra ‘/’ + valor, depois do endpoint
+
+Aula 09
+
+Insomnia
+Ferramenta que dinamiza a manipulação de testes API Rest
+
+mvn spring-boot:run  
+
+response: é possível buscar informações de outra request no insomnia
+$.data.token = para extrair o token de oura request
+
+Aula 10
+
+Postman
+Ferramenta que dinamiza a manipulação de testes API Rest (+1)
+pode ser colaborativa
+
+Dá pra ter coleções de requisições;
+OBS.: a sintaxe para uma variável global é {{NOME DA VARIÁVEL}} 
+obs2.: lembrar sempre de salvar as alterações!
+
+Aula 11
+
+Rest Assured: biblioteca 
+
