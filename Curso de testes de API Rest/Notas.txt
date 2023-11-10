@@ -32,23 +32,34 @@ Postman
 json
 
 
-Aula 04
+Aula 04~~
+
 O que são Requests e Response
+Requests ou Requisições são 
 
 Curl: ferramenta para enviar requisições e receber respostas por meio de http
 
 jasonformatter.org
 
 
-Aula 05
+Aula 05~~
 
 Instalando uma API Rest de Exemplo para Testes
 
-heathers: cabeçalho
+no intellij:
+	"Ctrl + Ctrl": abre uma aba para executar comandos ou configurações;
+	"mvn clean install": "limpa" o código;
+	"mvn spring-boot:run": executa a API
+
+No Git Bash:
+	"curl -X GET http://localhost:8089/api/v1/status": verifica o status da API, se ela está rodando
+
+cURL: Is one of the most common ways to interact with an API, a command line tool that allows you to make web requests
+https://careerkarma.com/blog/what-is-curl/
 
 Aula 06
 
-Headers
+Headers(cabeçalho)
 
 Definição: parte de dentro da requisição enviada para o servidor onde serão armazenadas informações técnicas
 
