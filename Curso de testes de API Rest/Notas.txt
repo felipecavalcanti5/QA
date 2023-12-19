@@ -57,14 +57,17 @@ No Git Bash:
 cURL: Is one of the most common ways to interact with an API, a command line tool that allows you to make web requests
 https://careerkarma.com/blog/what-is-curl/
 
-Aula 06
+Aula 06~~
+
+No browser: http://localhost:8089/api/swagger-ui.html
 
 Headers(cabeçalho)
 
 Definição: parte de dentro da requisição enviada para o servidor onde serão armazenadas informações técnicas
 
 Swagger: Documentação da interface que se quer interagir.
-Métodos: 
+Métodos: verbos http
+end-points: [substantivos no plural (boas práticas)]
 Post: Cria um recurso dentro do seu servidor;
 Get: Retorna informações do servidor;
 Put: Utilizado para alterar um recurso do servidor; 
@@ -76,14 +79,16 @@ End-point:
 ex.: /v1/auth
 
 No Git Bash:
-curl
+curl -X POST -i/is http://localhost:8089/api/v1/auth -d '{ "email": "admin@email.com", "senha": "654321" }' -H 'Content-Type: application/json'
+
 -d: body
+-H: content type
 -i: informações do heather
 -is: informações do heather sem os percentuais de tempo
 
-Aula 07
+Aula 07~~
 
-Autenticação e autorização em API Rest
+curl -X POST -is http://localhost:8089/api/v1/viagens -d '{ "acompanhante": "Rayanna", "dataPartida": "2023-12-16", "dataRetorno": "2024-01-20", "localDeDestino": "Manaus", "regiao": "Norte" }' -H 'Content-Type: application/json' -H 'Authorization: '
 
 Dicas: 
 Conhecer o objeto;
