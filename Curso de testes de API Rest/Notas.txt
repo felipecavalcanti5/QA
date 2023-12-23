@@ -84,7 +84,7 @@ curl -X POST -i/is http://localhost:8089/api/v1/auth -d '{ "email": "admin@email
 -d: body
 -H: content type
 -i: informações do heather
--is: informações do heather sem os percentuais de tempo
+-is (ou '-si'): informações do heather sem os percentuais de tempo
 
 Aula 07~~
 
@@ -111,15 +111,27 @@ Aula 08
 
 enviando parâmetros 
 
+-d: indica o envio de um body na requisição
 Usando o método POST ou PUT, → -d: body
 escrita do conteúdo do body com JSON
+	- Dentro do body --> aspas duplas!
 
-Via Header: -H
-aspas simples!
+-H: envio de parâmetros via header: (nome do header + valor do header)
+	- Aspas simples!
+
+"Unsupported Media Type" --> tipo do dado inválido. ex.: escrever errado 
+
+curl -X POST -is http://localhost:8089/api/v1/auth -d '{ "email": "usuario@email.com", "senha": "123456" }' -H 'Content-Type: application/json'
+curl -X GET -is http://localhost:8089/api/v1/viagens -H 'Authorization: '
 
 Via Query: Depois do endpoint, inserir uma ‘?’ + parâmetro = valor
+curl -X GET -is http://localhost:8089/api/v1/viagens?regiao=Norte -H 'Authorization: '
+
+Obs.: Havendo mais de um parâmetro via query, inserir um '&' + parâmetro
+curl -X GET -is http://localhost:8089/api/v1/viagens?regiao=Norte&acompanhante=Rayanna -H 'Authorization: '
 
 Via PATH: Colocar uma barra ‘/’ + valor, depois do endpoint
+curl -X GET -is http://localhost:8089/api/v1/viagens/1 -H 'Authorization: '
 
 Aula 09
 
