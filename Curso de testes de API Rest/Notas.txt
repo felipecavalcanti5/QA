@@ -107,7 +107,7 @@ Autorizado é poder consumir um determinado endpoint; tem a possibilidade de rea
 error 401 = “unauthorized”
 
 
-Aula 08
+Aula 08~~
 
 enviando parâmetros 
 
