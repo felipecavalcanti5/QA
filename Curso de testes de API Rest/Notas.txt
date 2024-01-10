@@ -90,6 +90,8 @@ Aula 07~~
 
 curl -X POST -is http://localhost:8089/api/v1/viagens -d '{ "acompanhante": "Rayanna", "dataPartida": "2023-12-16", "dataRetorno": "2024-01-20", "localDeDestino": "Manaus", "regiao": "Norte" }' -H 'Content-Type: application/json' -H 'Authorization: '
 
+
+
 Dicas: 
 Conhecer o objeto;
 abstraindo inteligência do backend
