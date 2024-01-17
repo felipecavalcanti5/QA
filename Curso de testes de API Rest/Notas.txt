@@ -135,7 +135,7 @@ curl -X GET -is http://localhost:8089/api/v1/viagens?regiao=Norte&acompanhante=R
 Via PATH: Colocar uma barra ‘/’ + valor, depois do endpoint
 curl -X GET -is http://localhost:8089/api/v1/viagens/1 -H 'Authorization: '
 
-Aula 09
+Aula 09~~
 
 Insomnia
 Ferramenta que dinamiza a manipulação de testes API Rest
@@ -148,6 +148,11 @@ $.data.token = para extrair o token de oura request
 Aula 10
 
 Postman
+environements > globals
+	--> nas collections: {{nome da variável global}}
+
+aba tests: serve para colocar scripts a serem executados após a execução da requisição
+
 Ferramenta que dinamiza a manipulação de testes API Rest (+1)
 pode ser colaborativa
 
